@@ -1,242 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" style="height: 100%">
 <head>
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
   	<meta content="" name="keywords">
   	<meta content="" name="description">
 	<style>
-		* {
-			margin: 0;
-			padding: 0;
+		@media (min-width: 350px) {
+			#main .col-2 {
+				padding: 30px!important;
+			}
 		}
-
-
-
-		#main .col-2 a:hover {
-			background-color: #34c2e6!important;
-		}
-
-
-
-
-
-		@media (max-width: 280px) {
+		@media (min-width: 580px) {
+			#main {
+				max-width: 680px!important;
+			}
+			#main td {
+				display: table-cell!important;
+				width: 50%;
+			}
 			#main .col-2 h1 {
-				font-size: 15px!important;
+				text-align: left!important;
 			}
 			#main .col-2 p {
-				margin-top: 20px!important;
-				font-size: 12px!important;
-			}
-			#main .col-2 a {
-				margin-top: 15px!important;
-				font-size: 12px!important;
-				padding: 8px!important;
-				width: 70px!important;
+				text-align: left!important;
 			}
 		}
-		@media (min-width: 280px) and (max-width: 480px) {
-			#main .col-2 h1 {
-				font-size: 21px!important;
-			}
-			#main .col-2 p {
-				font-size: 14px!important;
-			}
-		}
-		@media (max-width: 480px) {
+		@media (min-width: 680px) {
 			#bg {
-				padding: 1px!important;
-			}
-
-
-
-			#main {
-				margin-top: 0!important;
-			}
-
-			#main .col-2 {
-				padding: 20px!important;
-			}
-		}
-		@media (min-width: 480px) and (max-width: 580px) {
-			#main {
-				width: 90%!important;
-			}
-		}
-		@media (max-width: 580px) {
-			#main td {
-				display: block;
-			}
-
-			#main .col-1 {
-				width: 100%!important;
-			}
-
-			#main .col-2 {
-				text-align: center;
-				width: auto!important;
-			}
-			#main .col-2 p {
-				padding-right: 0!important;
-			}
-			#main .col-2 a {
-				margin-left: auto;
-				margin-right: auto;
-			}
-		}
-		@media (min-width: 580px) and (max-width: 780px) {
-			#main td {
-				width: 40%!important;
-			}
-
-			#main .col-2 {
 				padding: 20px!important;
 			}
 			#main .col-2 h1 {
-				font-size: 20px!important;
+				font-size: 30px!important;
 			}
 			#main .col-2 p {
-				margin-top: 20px!important;
-				padding-right: 20px!important;
-				font-size: 12px!important;
-			}
-			#main .col-2 a {
-				margin-top: 15px!important;
-				font-size: 12px!important;
-				padding: 8px!important;
-				width: 70px!important;
+				font-size: 15px!important;
 			}
 		}
 	</style>
 </head>
-	<body style="margin: 0; padding: 0;">
-		<style>
-			* {
-				margin: 0;
-				padding: 0;
-			}
-
-
-
-			#main .col-2 a:hover {
-				background-color: #34c2e6!important;
-			}
-
-
-
-
-
-			@media (max-width: 280px) {
-				#main .col-2 h1 {
-					font-size: 15px!important;
-				}
-				#main .col-2 p {
-					margin-top: 20px!important;
-					font-size: 12px!important;
-				}
-				#main .col-2 a {
-					margin-top: 15px!important;
-					font-size: 12px!important;
-					padding: 8px!important;
-					width: 70px!important;
-				}
-			}
-			@media (min-width: 280px) and (max-width: 480px) {
-				#main .col-2 h1 {
-					font-size: 21px!important;
-				}
-				#main .col-2 p {
-					font-size: 14px!important;
-				}
-			}
-			@media (max-width: 480px) {
-				#bg {
-					padding: 1px!important;
-				}
-
-
-
-				#main {
-					margin-top: 0!important;
-				}
-
-				#main .col-2 {
-					padding: 20px!important;
-				}
-			}
-			@media (min-width: 480px) and (max-width: 580px) {
-				#main {
-					width: 90%!important;
-				}
-			}
-			@media (max-width: 580px) {
-				#main td {
-					display: block;
-				}
-
-				#main .col-1 {
-					width: 100%!important;
-				}
-
-				#main .col-2 {
-					text-align: center;
-					width: auto!important;
-				}
-				#main .col-2 p {
-					padding-right: 0!important;
-				}
-				#main .col-2 a {
-					margin-left: auto;
-					margin-right: auto;
-				}
-			}
-			@media (min-width: 580px) and (max-width: 780px) {
-				#main td {
-					width: 40%!important;
-				}
-
-				#main .col-2 {
-					padding: 20px!important;
-				}
-				#main .col-2 h1 {
-					font-size: 20px!important;
-				}
-				#main .col-2 p {
-					margin-top: 20px!important;
-					padding-right: 20px!important;
-					font-size: 12px!important;
-				}
-				#main .col-2 a {
-					margin-top: 15px!important;
-					font-size: 12px!important;
-					padding: 8px!important;
-					width: 70px!important;
-				}
-			}
-		</style>
-
-
+	<body style="margin: 0; padding: 0; height: 100%">
 
 		
 
-		<table id="bg" style="width: 100%; background-color: #9cc9dc; padding: 20px;">
+		<table id="bg" style="width: 100%; height: 100%; background-color: #9cc9dc; padding: 5px;">
 			<tr>
-				<td>
+				<td style="padding: 0;">
 
-					<table id="main" style="width: 100%; max-width: 900px; margin-top: 50px; margin-bottom: 100px; margin-left: auto; margin-right: auto; border-spacing: 0;">
+					<table id="main" style="width: 100%; max-width: 450px; margin-left: auto; margin-right: auto;border-spacing: 0;">
 						<tr>
-
-							<td class="col-1" style="">
+							<td class="col-1" style="padding: 0; display: block;">
 								<img src="https://i.imgur.com/BGM60Ra.jpg" style="width: 100%; display: block;">
 							</td>
-
-							<td class="col-2" style="padding: 30px; background-color: #fff; font-family: Arial, Helvetica, sans-serif;">
-								<h1 style="color: #0c7a91; font-size: 30px;">BIW Email Verification</h1>
-								<p style="margin-top: 40px; color: #9ba3b1; padding-right: 80px; font-size: 15px;">Please before we complete your subcribtion to our newsletter, verify your email address by pressing the verify button below.</p>
-								<a href="#" style="display: block; width: 90px; padding: 10px; color: #fff; background-color: #1f7599; margin-top: 30px; text-align: center; font-size: 14px; text-decoration: none;">Verify</a>
+							<td class="col-2" style="padding: 10px; background-color: #fff; font-family: Arial, Helvetica, sans-serif; display: block;">
+								<h1 style="color: #0c7a91; font-size: 20px; text-align: center;">BIW Email Confirmation</h1>
+								<p style="margin-top: 20px; color: #9ba3b1; font-size: 13px; text-align: center;">Before we complete your subcribtion to our newsletter, please confirm your email address by pressing the confirm button below.</p>
+								<p style=" margin-top: 50px; text-align: center;">
+									<a href="#" style="color: #fff; background-color: #1f7599; font-size: 14px; text-decoration: none; padding-top: 10px; padding-bottom: 10px; padding-left: 30px; padding-right: 30px;">Confirm</a>
+								</p>
 							</td>
-
 						</tr>
 					</table>
 
